@@ -1,0 +1,21 @@
+{
+  "train": {
+    "words": 21346,
+    "sequences": 21334,
+    "unknown_fraction": 0.048393141478300095
+  },
+  "validation": {
+    "words": 2668,
+    "sequences": 2656,
+    "unknown_fraction": 0.1173163428902626
+  },
+  "test": {
+    "words": 2669,
+    "sequences": 2657,
+    "unknown_fraction": 0.12851254642009735
+  },
+  "total_words": 26683,
+  "raw_unique_words": 2628,
+  "vocabulary": 1293,
+  "dataset_sha256": "9a6730d17a67f0a73034ab7df4b86779e67c8e19f6a64e1c5d81d0a697288278"
+}
