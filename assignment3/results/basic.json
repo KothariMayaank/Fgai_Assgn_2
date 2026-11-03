@@ -1,0 +1,43 @@
+{
+  "model": "basic",
+  "status": "completed",
+  "test_n": 128,
+  "parameters": 1299157,
+  "training_seconds": 31.46459909999976,
+  "load_seconds": 0,
+  "inference_seconds": 1.4627903450000304,
+  "seconds_per_sentence": 0.011428049570312737,
+  "decoding": "greedy; max_new_tokens=48; inference batch_size=1",
+  "test_sha256": "fe1e419390793507afb26f9546b61e619c76f8647cd00f0217fd26fec6a43350",
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.15.0+cpu",
+    "transformers": "4.57.1",
+    "sacrebleu": "2.5.1",
+    "device": "CPU",
+    "cpu_threads": 4,
+    "seed": 42
+  },
+  "bleu": 0.3127413768467104,
+  "chrf": 11.18882716520231,
+  "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+  "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.5.1",
+  "adaptation": "trained from scratch",
+  "epochs": 15,
+  "best_validation_loss": 4.102887722132472,
+  "architecture": {
+    "d_model": 128,
+    "heads": 4,
+    "encoder_layers": 2,
+    "decoder_layers": 2,
+    "ffn_dim": 256
+  },
+  "source_vocab_size": 1458,
+  "target_vocab_size": 1749,
+  "training_config": {
+    "batch_size": 32,
+    "learning_rate": 0.0005,
+    "optimizer": "AdamW",
+    "dropout": 0.1
+  }
+}

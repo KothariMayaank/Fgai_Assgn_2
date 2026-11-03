@@ -1,0 +1,5 @@
+model,status,bleu,chrf,parameters,training_seconds,inference_seconds,seconds_per_sentence
+basic,completed,0.3127413768467104,11.18882716520231,1299157,31.46459909999976,1.4627903450000304,0.011428049570312737
+mt5,not_run,,,,,,
+llama,blocked_access,,,,,,
+gemma,blocked_access,,,,,,

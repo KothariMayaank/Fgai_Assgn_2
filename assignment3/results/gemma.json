@@ -1,0 +1,6 @@
+{
+  "model": "gemma",
+  "status": "blocked_access",
+  "error_type": "OSError",
+  "reason": "Official model repository returned HTTP 401; approved Hugging Face account access required."
+}

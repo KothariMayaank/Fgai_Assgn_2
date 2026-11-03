@@ -1,0 +1,642 @@
+[
+  {
+    "id": "bff19ae106d65511",
+    "source": "Tom is weak.",
+    "reference": "Tom est faible."
+  },
+  {
+    "id": "bc0e0c6744ca6a2c",
+    "source": "It makes no difference whether you agree or not.",
+    "reference": "Cela ne changera rien que vous soyez d'accord ou pas"
+  },
+  {
+    "id": "1cb38e9152be38e2",
+    "source": "They're arguing.",
+    "reference": "Ils sont en train de se disputer."
+  },
+  {
+    "id": "080bcdf87ffd86b9",
+    "source": "When I painted this picture, I was 23 years old.",
+    "reference": "Quand j'ai peint ce tableau, j'avais 23 ans."
+  },
+  {
+    "id": "8911b40a622b750f",
+    "source": "We'll give you your revenge.",
+    "reference": "Nous te donnerons ta revanche."
+  },
+  {
+    "id": "dc380baf4d13e1d7",
+    "source": "I have very good eyesight.",
+    "reference": "Je suis doté d'une très bonne vue."
+  },
+  {
+    "id": "9f92df2d8ecd7851",
+    "source": "This is Tom's third trip to Australia.",
+    "reference": "C'est le troisième voyage de Tom en Australie."
+  },
+  {
+    "id": "0b03fcdf4df02978",
+    "source": "Do you sell advance tickets here?",
+    "reference": "Vendez-vous ici des billets à l'avance ?"
+  },
+  {
+    "id": "5db924e337e61af7",
+    "source": "History is more complex than you think.",
+    "reference": "L'Histoire est plus compliquée que tu ne penses."
+  },
+  {
+    "id": "9d50def6af51d2bb",
+    "source": "I hear someone singing.",
+    "reference": "J'entends quelqu'un chanter."
+  },
+  {
+    "id": "1eb61c429fe7754d",
+    "source": "The lemon is sour.",
+    "reference": "Le citron est acide."
+  },
+  {
+    "id": "5eccacb4381fd95b",
+    "source": "I dislike living in such a noisy place.",
+    "reference": "Je n'aime pas vivre dans un endroit si bruyant."
+  },
+  {
+    "id": "573e334014e3fbcb",
+    "source": "Have you heard from him since he left for America?",
+    "reference": "As-tu des nouvelles de lui depuis qu'il est parti en Amérique?"
+  },
+  {
+    "id": "15425b89316a8015",
+    "source": "Don't push your child into any vocation he dislikes.",
+    "reference": "Ne poussez pas votre enfant dans quelque vocation qu'il n'aime pas."
+  },
+  {
+    "id": "067e7565b7b17fae",
+    "source": "Grandmother looks after the children during the day.",
+    "reference": "Grand-mère s'occupe des enfants pendant la journée."
+  },
+  {
+    "id": "833acee066df0757",
+    "source": "He voted for the proposal.",
+    "reference": "Il a voté en faveur de la proposition."
+  },
+  {
+    "id": "725dcc4c91e19e1d",
+    "source": "She had to take care of her sister.",
+    "reference": "Elle eut à prendre soin de sa sœur."
+  },
+  {
+    "id": "933d07d1f1f7f236",
+    "source": "There's almost no coffee left in the pot.",
+    "reference": "Il ne reste presque plus de café dans la cafetière."
+  },
+  {
+    "id": "680563997f1c5192",
+    "source": "I didn't ask for this.",
+    "reference": "Je n'ai pas demandé ça."
+  },
+  {
+    "id": "b5faf717d0a9d25e",
+    "source": "This would be catastrophic.",
+    "reference": "Ce serait catastrophique."
+  },
+  {
+    "id": "337b35ac6c32309a",
+    "source": "They wash their hands with soap.",
+    "reference": "Ils se lavent les mains avec du savon."
+  },
+  {
+    "id": "4e5682261219758a",
+    "source": "You're still taller than me.",
+    "reference": "Encore es-tu plus grand que moi."
+  },
+  {
+    "id": "a22b802b03799f12",
+    "source": "I let the team down.",
+    "reference": "J'ai laissé tomber l'équipe."
+  },
+  {
+    "id": "4096f65d428ae15b",
+    "source": "I would've done it.",
+    "reference": "Je l'aurais fait."
+  },
+  {
+    "id": "508587bc36367e29",
+    "source": "She fell unconscious to the floor.",
+    "reference": "Elle tomba au sol, inconsciente."
+  },
+  {
+    "id": "9ecd306120e35a36",
+    "source": "He is my brother, not father.",
+    "reference": "C'est mon frère, pas mon père."
+  },
+  {
+    "id": "f4b3ed210a97339e",
+    "source": "What can I get you?",
+    "reference": "Que puis-je aller te chercher ?"
+  },
+  {
+    "id": "2d8d2c29fd0e64e5",
+    "source": "I believe in ghosts.",
+    "reference": "Je crois aux fantômes."
+  },
+  {
+    "id": "b9b21cc8e245583b",
+    "source": "I don't really understand you.",
+    "reference": "Je ne te comprend vraiment pas."
+  },
+  {
+    "id": "ebd383a2fb812e3f",
+    "source": "Toyota's new car sports a hefty price tag.",
+    "reference": "La nouvelle voiture de sport de Toyota affiche une étiquette de prix salée."
+  },
+  {
+    "id": "68a53d5d1b844a01",
+    "source": "Tom will know what we should do.",
+    "reference": "Tom saura ce que nous devrions faire."
+  },
+  {
+    "id": "9098cf106e02cc39",
+    "source": "Don't believe anything he says.",
+    "reference": "Ne croyez à rien de ce qu'il dit."
+  },
+  {
+    "id": "468ecaa8a7474f05",
+    "source": "Looking into the room, I found nobody there.",
+    "reference": "Regardant dans la pièce, je n'ai trouvé personne."
+  },
+  {
+    "id": "df2ff8da5f0a7511",
+    "source": "That's all we talk about.",
+    "reference": "Nous ne parlons que de ça."
+  },
+  {
+    "id": "fda8104e8b90fe97",
+    "source": "He himself tried it.",
+    "reference": "Il l'a essayé lui-même."
+  },
+  {
+    "id": "1b3f05675a9832e2",
+    "source": "Try not to forget anything.",
+    "reference": "Essaie de ne rien oublier."
+  },
+  {
+    "id": "c180dc89a2bb89c1",
+    "source": "Let's try again.",
+    "reference": "Essayons encore une fois."
+  },
+  {
+    "id": "c730a9ed84288f90",
+    "source": "Are you sure of your facts?",
+    "reference": "Êtes-vous sûrs de vos faits ?"
+  },
+  {
+    "id": "fcae89482fb004c4",
+    "source": "There is a man at the door.",
+    "reference": "Il y a un homme à la porte."
+  },
+  {
+    "id": "4028a2c7b2aeb800",
+    "source": "I do not know how to drive a car.",
+    "reference": "J'ignore comment conduire une voiture."
+  },
+  {
+    "id": "683cdb73ef1909cc",
+    "source": "Why do you want to be alone all the time?",
+    "reference": "Pourquoi veux-tu tout le temps être seul?"
+  },
+  {
+    "id": "881aab77c8a0880d",
+    "source": "I wrote to him for quite another reason.",
+    "reference": "Je lui ai écrit pour une autre raison."
+  },
+  {
+    "id": "8fa8e6bd0f3beb8b",
+    "source": "Australia is smaller than South America.",
+    "reference": "L'Australie est plus petite que l'Amérique du Sud."
+  },
+  {
+    "id": "47468f0138d97c31",
+    "source": "Wine is made from grapes.",
+    "reference": "Le vin est fait à partir du raisin."
+  },
+  {
+    "id": "d3e9671a1e088889",
+    "source": "I need to end this now.",
+    "reference": "Il me faut en finir maintenant."
+  },
+  {
+    "id": "697d98435a09c997",
+    "source": "A part of this land is mine.",
+    "reference": "Une partie de ce terrain est à moi."
+  },
+  {
+    "id": "f3a5e33752025fb3",
+    "source": "He will survive.",
+    "reference": "Il survivra."
+  },
+  {
+    "id": "61b29592cce8df9b",
+    "source": "I just got the news.",
+    "reference": "Je viens d'avoir les nouvelles."
+  },
+  {
+    "id": "d8c7b55cde62c0ea",
+    "source": "I am pretty sure.",
+    "reference": "Je suis relativement sûr."
+  },
+  {
+    "id": "a87d48678297e6f5",
+    "source": "Generally, women live 10 years longer than men.",
+    "reference": "En général, les femmes vivent dix ans de plus que les hommes."
+  },
+  {
+    "id": "2f52bd7f5e3b1c7c",
+    "source": "I've finally gotten over my cold.",
+    "reference": "J'ai finalement réussi à vaincre mon rhume."
+  },
+  {
+    "id": "95deccf5d23e9fcc",
+    "source": "His record will never be broken.",
+    "reference": "Son record ne sera jamais battu."
+  },
+  {
+    "id": "936380567ed2a235",
+    "source": "Mary isn't as pretty as her sister.",
+    "reference": "Mary n'est pas aussi jolie que sa sœur."
+  },
+  {
+    "id": "f391e3e2ae149b2e",
+    "source": "I heard someone come into the room.",
+    "reference": "J'ai entendu quelqu'un entrer dans la chambre."
+  },
+  {
+    "id": "36645417e37f02a9",
+    "source": "I don't care about any of that.",
+    "reference": "Je ne me soucie de rien de tout cela."
+  },
+  {
+    "id": "b064d80aaccf78ad",
+    "source": "My parents forbade me to see Tom again.",
+    "reference": "Mes parents m'ont interdit de revoir Tom."
+  },
+  {
+    "id": "6f06716ca7d06ef0",
+    "source": "You guys can do it if you try.",
+    "reference": "Vous pouvez le faire, les gars, si vous essayez."
+  },
+  {
+    "id": "9736956a58906b56",
+    "source": "The strike affected the nation's economy.",
+    "reference": "La grève a nui à l'économie nationale."
+  },
+  {
+    "id": "8313fd958c9f95c9",
+    "source": "How's your cold?",
+    "reference": "Comment va votre rhume ?"
+  },
+  {
+    "id": "56f5686cd8ca62f4",
+    "source": "Let's go by car.",
+    "reference": "Allons-y en voiture."
+  },
+  {
+    "id": "2bba6299206c8d17",
+    "source": "It really breaks my heart.",
+    "reference": "Ça me brise vraiment le cœur."
+  },
+  {
+    "id": "83deac51149a8f35",
+    "source": "Tom and Mary are playing chess.",
+    "reference": "Tom et Marie jouent aux échecs."
+  },
+  {
+    "id": "501d9bf107d6d41d",
+    "source": "Beijing is bigger than Rome.",
+    "reference": "Pékin est plus grand que Rome."
+  },
+  {
+    "id": "4b7720a5920cbd18",
+    "source": "Tom refused to pay his bills.",
+    "reference": "Tom refusa de payer ses factures."
+  },
+  {
+    "id": "3f7ddfefc615bc09",
+    "source": "How many does he want?",
+    "reference": "Combien veut-il ?"
+  },
+  {
+    "id": "04bfdb45535be4fd",
+    "source": "All the things I bought have already arrived.",
+    "reference": "Toutes les choses que j'ai achetées sont déjà arrivées."
+  },
+  {
+    "id": "ca3442342d4119c8",
+    "source": "I could have sworn I saw somebody.",
+    "reference": "J'aurais pu jurer avoir vu quelqu'un."
+  },
+  {
+    "id": "580fe797739c9645",
+    "source": "I tried to protect you.",
+    "reference": "J'ai essayé de te protéger."
+  },
+  {
+    "id": "d31eba20355f46bf",
+    "source": "Have you ever visited Rome?",
+    "reference": "Avez-vous déjà visité Rome ?"
+  },
+  {
+    "id": "a7ae66efbe3452ee",
+    "source": "They're back where they want to be.",
+    "reference": "Ils sont de retour là où ils veulent être."
+  },
+  {
+    "id": "9c2f2675787410c2",
+    "source": "I eat there every night.",
+    "reference": "J'y mange tous les soirs."
+  },
+  {
+    "id": "0e68f9bd9eea9110",
+    "source": "I do all the work.",
+    "reference": "Je fais tout le travail."
+  },
+  {
+    "id": "73b40784bd3f556d",
+    "source": "She held him tightly and never wanted to let go.",
+    "reference": "Elle le tint fermement et ne voulut jamais lâcher."
+  },
+  {
+    "id": "64c80338751a0dee",
+    "source": "I study French in addition to English.",
+    "reference": "J'étudie le français en plus de l'anglais."
+  },
+  {
+    "id": "19b2ba1b6d73246f",
+    "source": "This sentence seems to be grammatically correct.",
+    "reference": "Cette phrase semble être grammaticalement correcte."
+  },
+  {
+    "id": "0367396a7ce66477",
+    "source": "You need to fix it.",
+    "reference": "Il faut que tu le répares."
+  },
+  {
+    "id": "255da664aa62fe7d",
+    "source": "I rescued you.",
+    "reference": "Je t'ai sauvée."
+  },
+  {
+    "id": "f23ee9998f8d9b00",
+    "source": "It's great to meet you.",
+    "reference": "C'est super de te rencontrer."
+  },
+  {
+    "id": "d2c65daee3dc2bd3",
+    "source": "Everyone looks worried.",
+    "reference": "Tout le monde a l'air soucieux."
+  },
+  {
+    "id": "ad92a3934ab4f218",
+    "source": "I wouldn't do that if I were you.",
+    "reference": "Je ne le ferais pas si j'étais vous."
+  },
+  {
+    "id": "680f8a2fbdb207e4",
+    "source": "What did you find out?",
+    "reference": "Qu'avez-vous découvert ?"
+  },
+  {
+    "id": "51fa4433f6ee514e",
+    "source": "She didn't know what to say to him.",
+    "reference": "Elle ne savait pas quoi lui dire."
+  },
+  {
+    "id": "063cb857db5cac4f",
+    "source": "He convinced us of her innocence.",
+    "reference": "Il nous a convaincu de son innocence."
+  },
+  {
+    "id": "05fb6a820fe5a8dd",
+    "source": "Your hat's on backwards.",
+    "reference": "Tu as mis ton chapeau à l'envers."
+  },
+  {
+    "id": "a7849a64f0fa24b7",
+    "source": "I left my calculator on my desk.",
+    "reference": "J'ai laissé ma calculatrice sur mon bureau."
+  },
+  {
+    "id": "11b3a3ce61d3d45a",
+    "source": "I can give you some useful information.",
+    "reference": "Je peux vous donner des informations utiles."
+  },
+  {
+    "id": "c58d32831c8623bb",
+    "source": "What's your real purpose?",
+    "reference": "Quel est votre réel objectif ?"
+  },
+  {
+    "id": "4cf9c61113c41208",
+    "source": "It looks like we're all here.",
+    "reference": "On dirait que nous sommes tous là."
+  },
+  {
+    "id": "f32e47744ec6b467",
+    "source": "I was involved in a petty argument.",
+    "reference": "J'étais impliqué dans une dispute insignifiante."
+  },
+  {
+    "id": "9673baf3729d792d",
+    "source": "A man's worth lies in what he is.",
+    "reference": "La valeur d'un homme réside dans ce qu'il est."
+  },
+  {
+    "id": "a3dd615224ceb65b",
+    "source": "Tom didn't understand a word Mary said.",
+    "reference": "Tom ne comprenait pas ce que Marie disait."
+  },
+  {
+    "id": "27550f8510795c1a",
+    "source": "Tom went back to his bedroom.",
+    "reference": "Tom retourna dans sa chambre."
+  },
+  {
+    "id": "f27b5cd25d064d27",
+    "source": "I'm retired, too.",
+    "reference": "Je suis également à la retraite."
+  },
+  {
+    "id": "bd90c93914201cb8",
+    "source": "I don't have a younger sister.",
+    "reference": "Je n'ai pas de sœur plus jeune."
+  },
+  {
+    "id": "a14cf1f50773c900",
+    "source": "You're too suspicious about everything.",
+    "reference": "Tu es trop suspicieux de tout."
+  },
+  {
+    "id": "fa6f919d4320852a",
+    "source": "Tom has blue eyes.",
+    "reference": "Tom a les yeux bleus."
+  },
+  {
+    "id": "edb44f8120247fb7",
+    "source": "She looked at me seductively.",
+    "reference": "Elle me lança un coup d’œil aguicheur."
+  },
+  {
+    "id": "6eb6f4ab698ba029",
+    "source": "My house is on a hill.",
+    "reference": "Ma maison se tient sur une colline."
+  },
+  {
+    "id": "e92fcbf0f70843c9",
+    "source": "Are you coming with me?",
+    "reference": "Tu viens avec moi ?"
+  },
+  {
+    "id": "96ddae4de5390613",
+    "source": "What did you want to talk to me about?",
+    "reference": "De quoi voulais-tu me parler ?"
+  },
+  {
+    "id": "118d96e6b0d51422",
+    "source": "Wait for Tom.",
+    "reference": "Attends Tom."
+  },
+  {
+    "id": "dbc19a0ca028c1aa",
+    "source": "We had a good time playing chess.",
+    "reference": "On a passé un bon moment à jouer aux échecs."
+  },
+  {
+    "id": "9fc95197481e89f4",
+    "source": "Mind your own business!",
+    "reference": "Mêle-toi de tes affaires."
+  },
+  {
+    "id": "e61ed0e5d50d7d9b",
+    "source": "I got busy.",
+    "reference": "Je suis devenu occupé."
+  },
+  {
+    "id": "4eae8d8dfa0eea6c",
+    "source": "Can I write it like that?",
+    "reference": "Peut-on écrire comme cela ?"
+  },
+  {
+    "id": "d3ee0c83b9aa4ea7",
+    "source": "There is a bird feeder in our backyard.",
+    "reference": "Il y a une mangeoire à oiseaux au fond de notre arrière-cour."
+  },
+  {
+    "id": "4d74ac155aa327cf",
+    "source": "I took two aspirins for my headache.",
+    "reference": "J'ai pris deux cachets d'aspirine pour mon mal de tête."
+  },
+  {
+    "id": "96fad89a48c593bb",
+    "source": "He made up his mind to marry her.",
+    "reference": "Il s'est fait à l'idée de l'épouser."
+  },
+  {
+    "id": "96352e83df1ad49a",
+    "source": "He sometimes ate out with his family.",
+    "reference": "Il sortait parfois manger avec sa famille."
+  },
+  {
+    "id": "5453031462e4db7c",
+    "source": "I have finally reached my limit.",
+    "reference": "J'ai finalement atteint ma limite."
+  },
+  {
+    "id": "50312ead3b8e9a26",
+    "source": "They're about to leave.",
+    "reference": "Elles sont sur le point de partir."
+  },
+  {
+    "id": "f6c82f708a12329e",
+    "source": "I believe in myself.",
+    "reference": "Je crois en moi."
+  },
+  {
+    "id": "b0b3fe6dba403bc3",
+    "source": "This is by far the best seafood restaurant in this area.",
+    "reference": "C'est de loin le meilleur restaurant de fruits de mer du coin."
+  },
+  {
+    "id": "c0d8a89be02de96d",
+    "source": "Look out the window.",
+    "reference": "Regarde par la fenêtre !"
+  },
+  {
+    "id": "76c511055060e2bb",
+    "source": "She has recently made remarkable progress in English.",
+    "reference": "Elle a fait d'incroyables progrès en anglais dernièrement."
+  },
+  {
+    "id": "d5651ad778128e6f",
+    "source": "Tom kissed Mary and she slapped him.",
+    "reference": "Tom a embrassé Marie, et elle l'a giflé."
+  },
+  {
+    "id": "7260e0eec2b59ee3",
+    "source": "We skied down the slope.",
+    "reference": "Nous avons dévalé la pente à ski."
+  },
+  {
+    "id": "9ba20e7644ac53d0",
+    "source": "She attended the meeting.",
+    "reference": "Elle était présente à la réunion."
+  },
+  {
+    "id": "7b7244c5421236a7",
+    "source": "Can't you guess what I'm doing?",
+    "reference": "Tu ne devines pas ce que je fais ?"
+  },
+  {
+    "id": "d6fe2e660cfa3cd2",
+    "source": "Two small bottles, please.",
+    "reference": "Deux petites bouteilles, s'il vous plaît."
+  },
+  {
+    "id": "aed1e244c5b619c7",
+    "source": "How far are you prepared to go?",
+    "reference": "Jusqu'où es-tu prêt à aller ?"
+  },
+  {
+    "id": "35133f34447ce07c",
+    "source": "He caught the first train and got there just in time.",
+    "reference": "Il a pris le premier train et est arrivé juste à temps."
+  },
+  {
+    "id": "1ab117cba7476167",
+    "source": "I said nothing about the matter.",
+    "reference": "Je ne dis rien à propos de l'affaire."
+  },
+  {
+    "id": "d605d49f6f0d1cb4",
+    "source": "I'm in the tennis club.",
+    "reference": "Je suis membre de ce club de tennis."
+  },
+  {
+    "id": "ecfbd4f959062da4",
+    "source": "When I saw her recently, she looked very happy.",
+    "reference": "Lorsque je la vis récemment, elle avait l'air très heureuse."
+  },
+  {
+    "id": "be63213d76aa1ede",
+    "source": "Tom showed up at just the right moment.",
+    "reference": "Tom apparut pile au bon moment."
+  },
+  {
+    "id": "0c823910ca67756c",
+    "source": "I can't dance.",
+    "reference": "Je ne sais pas danser."
+  },
+  {
+    "id": "2a6f3c3ca763d5b3",
+    "source": "I don't know whether I should laugh or cry.",
+    "reference": "J'ignore si je devrais rire ou pleurer."
+  }
+]

@@ -1,0 +1,6 @@
+test_causal_mask_blocks_future_tokens (test_pipeline.PipelineChecks.test_causal_mask_blocks_future_tokens) ... /workspace/scratch/51ec1d670b62/tmp/mlenv/lib/python3.12/site-packages/torch/nn/modules/transformer.py:533: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. We recommend specifying layout=torch.jagged when constructing a nested tensor, as this layout receives active development, has better operator coverage, and works with torch.compile. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/NestedTensorImpl.cpp:177.)
+  output = torch._nested_tensor_from_mask(
+ok
+test_perfect_translation_metrics (test_pipeline.PipelineChecks.test_perfect_translation_metrics) ... ok
+test_splits_do_not_overlap (test_pipeline.PipelineChecks.test_splits_do_not_overlap) ... ok
+test_training_vocab_excludes_test_only_words (test_pipeline.PipelineChecks.test_training_vocab_excludes_test_only_words) ... 

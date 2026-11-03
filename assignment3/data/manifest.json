@@ -1,0 +1,21 @@
+{
+  "source_url": "https://download.pytorch.org/tutorial/data.zip",
+  "original_source": "https://www.manythings.org/anki/",
+  "corpus": "Tatoeba English-French snapshot distributed by PyTorch tutorials",
+  "archive_sha256": "fb317e80248faeb62dc25ef3390ae24ca34b94e276bbc5141fd8862c2200bff5",
+  "archive_rows": 135842,
+  "eligible_unique_rows": 82935,
+  "split_sizes": {
+    "train": 1024,
+    "validation": 128,
+    "test": 128
+  },
+  "seed": 42,
+  "normalization": "NFKC; whitespace collapse; preserve accents and case in stored text",
+  "selection": "2-12 source tokens, 2-16 target tokens; unique casefolded source and target; shuffled",
+  "split_sha256": {
+    "train": "d3b0487ba89d9710c1224663b046162a734a59d9e9edbba95c8af1f26d871b14",
+    "validation": "c34d6cf298948162475fdb0cb26489812c69e409ca9b17eaea91e69e4b4d6a8e",
+    "test": "fe1e419390793507afb26f9546b61e619c76f8647cd00f0217fd26fec6a43350"
+  }
+}
