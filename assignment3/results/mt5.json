@@ -1,0 +1,35 @@
+{
+  "model": "mt5",
+  "status": "completed",
+  "test_n": 128,
+  "parameters": 300176768,
+  "training_seconds": 993.4804988380001,
+  "load_seconds": 69.96359021900025,
+  "inference_seconds": 165.7283958729995,
+  "seconds_per_sentence": 1.2947530927578086,
+  "decoding": "greedy; max_new_tokens=48; inference batch_size=1",
+  "test_sha256": "fe1e419390793507afb26f9546b61e619c76f8647cd00f0217fd26fec6a43350",
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.15.0+cpu",
+    "transformers": "4.57.1",
+    "sacrebleu": "2.5.1",
+    "device": "CPU",
+    "cpu_threads": 4,
+    "seed": 42
+  },
+  "bleu": 0.9343218498313675,
+  "chrf": 13.688280773338429,
+  "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+  "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.5.1",
+  "adaptation": "full fine-tuning",
+  "model_id": "google/mt5-small",
+  "model_revision": "73fb5dbe4756edadc8fbe8c769b0a109493acf7a",
+  "epochs": 2,
+  "best_validation_loss": 2.591809087368352,
+  "training_config": {
+    "batch_size": 4,
+    "optimizer": "Adafactor",
+    "lr": 0.001
+  }
+}

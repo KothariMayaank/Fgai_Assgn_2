@@ -85,25 +85,33 @@ def main():
     d.add_heading('Evaluation and measured results',0)
     d.add_paragraph('Primary evaluation uses the same 128 test sources, greedy decoding, at most 48 generated tokens and inference batch size 1. A validation warm-up is excluded. Timings include tokenization, generation and decoding, but exclude model loading. Training time includes validation and checkpoint saving. SacreBLEU computes corpus BLEU with 13a tokenization and chrF with character order 6 and beta 2. Both scores range from 0 to 100.')
     def number(r,k):return f'{r[k]:.2f}' if isinstance(r.get(k),(int,float)) else 'N/A'
-    table(d,['Model','Status','BLEU','chrF','Train s','Infer s'],[[r['model'],r['status'],number(r,'bleu'),number(r,'chrf'),number(r,'training_seconds'),number(r,'inference_seconds')] for r in rows])
+    table(d,['Model','Status','BLEU','chrF','Train s','Infer s'],[[r['model'],r['status'].replace('blocked_access','Access blocked').replace('not_run','Not run'),number(r,'bleu'),number(r,'chrf'),number(r,'training_seconds'),number(r,'inference_seconds')] for r in rows])
     d.add_paragraph('N/A denotes an unavailable measurement or non-applicable task-specific training, never a measured zero. Prompting does not erase the cost of original pretraining. Exact parameter counts, metric signatures, software versions and test hashes are retained in results JSON files.')
     if complete:
         d.add_paragraph('Measured parameter counts: '+ '; '.join(f"{r['model']}: {r['parameters']:,}" for r in complete)+'.')
-        if (ROOT/'results/quality.png').exists():d.add_picture(str(ROOT/'results/quality.png'),width=Inches(5.9))
+        by_name={r['model']:r for r in complete}
+        if 'basic' in by_name and 'mt5' in by_name:
+            b,m=by_name['basic'],by_name['mt5']
+            d.add_paragraph(f"mT5 scores {m['bleu']:.2f} BLEU and {m['chrf']:.2f} chrF, compared with {b['bleu']:.2f} and {b['chrf']:.2f} for the scratch model. Its measured inference time is {m['inference_seconds']:.2f} seconds versus {b['inference_seconds']:.2f} seconds for the same 128 sentences. This is a comparison of two encoder-decoder systems with very different sizes and pretraining, not an encoder-decoder versus decoder-only conclusion.")
+        if (ROOT/'results/quality.png').exists():d.add_picture(str(ROOT/'results/quality.png'),width=Inches(5.6))
     d.add_heading('Training choices and interpretation',1)
     d.add_paragraph('The scratch model uses AdamW at 0.0005, batch size 32, dropout 0.1 and 15 epochs. mT5 uses Adafactor at 0.001, batch size 4 and 2 epochs, with gradient checkpointing. Each selects the lowest validation token loss checkpoint; test scores do not choose checkpoints. The single seed and small subset limit statistical reliability. Poor outputs should motivate more data and validation tuning rather than hiding failures.')
-    d.add_paragraph('The comparison confounds architecture with size, pretraining, tokenization and adaptation. Lowercasing also disadvantages the scratch model in case-sensitive scoring. Equal output-token caps have different character budgets. Timing across CPU/GPU or precision settings must not be treated as a controlled architecture comparison. A large pretrained model can exploit broad language knowledge unavailable to the scratch model.')
+    d.add_paragraph('The comparison confounds architecture with size, pretraining, tokenization and adaptation. Lowercasing also disadvantages the scratch model in case-sensitive scoring. Equal output-token caps have different character budgets. Timing across CPU/GPU or precision settings must not be treated as a controlled architecture comparison. A large pretrained model can exploit broad language knowledge unavailable to the scratch model. CPU timings also reflect contention in the shared runtime; repeat on an isolated device for a stronger efficiency comparison.')
     d.add_page_break()
     d.add_heading('Translation errors and responsible AI',0)
-    d.add_paragraph('The following examples are taken directly from the saved test predictions of the basic Transformer. They demonstrate errors in this run, not a general property of every Transformer. Outputs are quoted exactly except where an explicitly labelled excerpt is used.')
+    d.add_paragraph('The following examples are taken directly from saved test predictions, with mT5 shown when available. They demonstrate behavior in this run, not a general property of either architecture. Outputs are quoted exactly except where an explicitly labelled excerpt is used.')
     p=ROOT/'results/basic_translations.json'
     examples=read(p) if p.exists() else []
-    for i in [0,2,3]:
+    for i in [0,3]:
         if len(examples)<=i:continue
         r=examples[i];d.add_heading('Test example '+str(i+1),2)
         d.add_paragraph('Source: '+r['source']+'\nReference: '+r['reference'])
         out=r['translation'];suffix=' [excerpt]' if len(out)>160 else ''
-        d.add_paragraph('Generated: '+out[:160]+suffix)
+        d.add_paragraph('Basic generated: '+out[:160]+suffix)
+        mp=ROOT/'results/mt5_translations.json'
+        if mp.exists():
+            mr=read(mp)[i];mo=mr['translation'];ms=' [excerpt]' if len(mo)>160 else ''
+            d.add_paragraph('mT5 generated: '+mo[:160]+ms)
     d.add_heading('Risk assessment and mitigations',1)
     d.add_paragraph('Omissions and unsupported content: a fluent but incomplete translation can change the user’s meaning. In the first example, the property “weak” is lost. The age statement illustrates repetition and failure to preserve the number 23. Check named entities, quantities and negation against the source; route uncertain or high-stakes translations to a qualified bilingual reviewer.')
     d.add_paragraph('Bias and cultural meaning: English gender-neutral roles can become gendered in French, while festivals and idioms can be flattened into stereotypes or literal wording. Evaluate balanced occupations and genders, retain culturally specific names, and use bilingual review and terminology glossaries. These are prospective risks; unexecuted model probes are not evidence of observed bias.')

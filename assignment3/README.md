@@ -6,7 +6,7 @@ English-to-French machine translation with a basic Transformer, mT5, LLaMA and G
 
 ## Current status
 
-See [results/RESULTS.md](results/RESULTS.md) for measured results and per-model execution status. The basic Transformer has been trained and evaluated. LLaMA and Gemma require approved Hugging Face access; their scores must not be inferred from other models. An incomplete comparison does not identify a four-model winner. The submission document is a cover sheet, not evidence that every experiment has completed.
+See [results/RESULTS.md](results/RESULTS.md) for measured results and per-model execution status. The basic Transformer and mT5 have been trained and evaluated. Their BLEU scores are 0.31 and 0.93, respectively; these low scores and the saved examples show that neither run is suitable for deployment. LLaMA and Gemma require approved Hugging Face access; their scores must not be inferred from other models. An incomplete comparison does not identify a four-model winner. The submission document is a cover sheet, not evidence that every experiment has completed.
 
 ## Run in Google Colab
 
@@ -32,6 +32,7 @@ python experiment.py gemma --temperatures
 python experiment.py summarize
 python inspect_checkpoints.py basic
 python inspect_checkpoints.py mt5
+python review_translations.py
 python make_documents.py
 ```
 
@@ -68,7 +69,7 @@ Comparability is limited: model sizes, multilingual pretraining, tokenizers, low
 
 ## Results and model comparison
 
-The measured score table is [results/RESULTS.md](results/RESULTS.md). `results/*_translations.json` contains every scored example, including unwanted commentary and empty output; no favourable examples are substituted. Loss histories, environment metadata, parameter counts and split hashes accompany each successful run. `results/quality.png` shows completed models only. Failed or blocked runs have no numerical score.
+The measured score table is [results/RESULTS.md](results/RESULTS.md). `results/*_translations.json` contains every scored example, including unwanted commentary and empty output; no favourable examples are substituted. Loss histories, environment metadata, parameter counts and split hashes accompany each successful run. `results/quality.png` shows completed models only. `results/loss_curves.png` compares training and validation loss. `results/QUALITATIVE_REVIEW.md` provides actual examples and diagnostic probes. Failed or blocked runs have no numerical score.
 
 `REPORT.md` and the PDF report explain the actual available findings, architectural trade-offs and responsible-use concerns. A best model is identified only after all four models finish on the same test set; even then it is specific to this dataset and compute budget.
 

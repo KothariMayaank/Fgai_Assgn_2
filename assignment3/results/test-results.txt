@@ -3,4 +3,9 @@ test_causal_mask_blocks_future_tokens (test_pipeline.PipelineChecks.test_causal_
 ok
 test_perfect_translation_metrics (test_pipeline.PipelineChecks.test_perfect_translation_metrics) ... ok
 test_splits_do_not_overlap (test_pipeline.PipelineChecks.test_splits_do_not_overlap) ... ok
-test_training_vocab_excludes_test_only_words (test_pipeline.PipelineChecks.test_training_vocab_excludes_test_only_words) ... 
+test_training_vocab_excludes_test_only_words (test_pipeline.PipelineChecks.test_training_vocab_excludes_test_only_words) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.561s
+
+OK

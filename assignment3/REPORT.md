@@ -4,7 +4,7 @@ ICT4403 Assignment 3 | Mayaank Kothari | 230953562
 
 This study implements a scratch Transformer, fine-tuned mT5, and prompted LLaMA and Gemma translation systems. Its purpose is to compare translation quality and computational cost on a shared test set, while examining failures relevant to responsible AI.
 
-The experiment is incomplete: mt5, llama, gemma have not produced completed test results. No four-model ranking or best-model conclusion is supported yet. The repository supplies executable paths for all four models and records available measurements without substituting estimated scores.
+The experiment is incomplete: llama, gemma have not produced completed test results. No four-model ranking or best-model conclusion is supported yet. The repository supplies executable paths for all four models and records available measurements without substituting estimated scores.
 
 ## Dataset and preprocessing
 
@@ -30,41 +30,41 @@ Primary evaluation uses the same 128 test sources, greedy decoding, at most 48 g
 | Model | Status | BLEU | chrF | Train s | Infer s |
 | --- | --- | --- | --- | --- | --- |
 | basic | completed | 0.31 | 11.19 | 31.46 | 1.46 |
-| mt5 | not_run | N/A | N/A | N/A | N/A |
-| llama | blocked_access | N/A | N/A | N/A | N/A |
-| gemma | blocked_access | N/A | N/A | N/A | N/A |
+| mt5 | completed | 0.93 | 13.69 | 993.48 | 165.73 |
+| llama | Access blocked | N/A | N/A | N/A | N/A |
+| gemma | Access blocked | N/A | N/A | N/A | N/A |
 
 N/A denotes an unavailable measurement or non-applicable task-specific training, never a measured zero. Prompting does not erase the cost of original pretraining. Exact parameter counts, metric signatures, software versions and test hashes are retained in results JSON files.
 
-Measured parameter counts: basic: 1,299,157.
+Measured parameter counts: basic: 1,299,157; mt5: 300,176,768.
+
+mT5 scores 0.93 BLEU and 13.69 chrF, compared with 0.31 and 11.19 for the scratch model. Its measured inference time is 165.73 seconds versus 1.46 seconds for the same 128 sentences. This is a comparison of two encoder-decoder systems with very different sizes and pretraining, not an encoder-decoder versus decoder-only conclusion.
 
 ## Training choices and interpretation
 
 The scratch model uses AdamW at 0.0005, batch size 32, dropout 0.1 and 15 epochs. mT5 uses Adafactor at 0.001, batch size 4 and 2 epochs, with gradient checkpointing. Each selects the lowest validation token loss checkpoint; test scores do not choose checkpoints. The single seed and small subset limit statistical reliability. Poor outputs should motivate more data and validation tuning rather than hiding failures.
 
-The comparison confounds architecture with size, pretraining, tokenization and adaptation. Lowercasing also disadvantages the scratch model in case-sensitive scoring. Equal output-token caps have different character budgets. Timing across CPU/GPU or precision settings must not be treated as a controlled architecture comparison. A large pretrained model can exploit broad language knowledge unavailable to the scratch model.
+The comparison confounds architecture with size, pretraining, tokenization and adaptation. Lowercasing also disadvantages the scratch model in case-sensitive scoring. Equal output-token caps have different character budgets. Timing across CPU/GPU or precision settings must not be treated as a controlled architecture comparison. A large pretrained model can exploit broad language knowledge unavailable to the scratch model. CPU timings also reflect contention in the shared runtime; repeat on an isolated device for a stronger efficiency comparison.
 
 Translation errors and responsible AI
 
-The following examples are taken directly from the saved test predictions of the basic Transformer. They demonstrate errors in this run, not a general property of every Transformer. Outputs are quoted exactly except where an explicitly labelled excerpt is used.
+The following examples are taken directly from saved test predictions, with mT5 shown when available. They demonstrate behavior in this run, not a general property of either architecture. Outputs are quoted exactly except where an explicitly labelled excerpt is used.
 
 ## Test example 1
 
 Source: Tom is weak.Reference: Tom est faible.
 
-Generated: tom est.
+Basic generated: tom est.
 
-## Test example 3
-
-Source: They're arguing.Reference: Ils sont en train de se disputer.
-
-Generated: ils sont sont sont sont.
+mT5 generated: Tom est très très très très très très très très très très très très très très très
 
 ## Test example 4
 
 Source: When I painted this picture, I was 23 years old.Reference: Quand j'ai peint ce tableau, j'avais 23 ans.
 
-Generated: je ne veux, je suis pas que je suis, je suis, je suis, je suis, je suis, je suis, je suis, je suis, je suis, je suis, je suis, je suis, je suis, je
+Basic generated: je ne veux, je suis pas que je suis, je suis, je suis, je suis, je suis, je suis, je suis, je suis, je suis, je suis, je suis, je suis, je suis, je
+
+mT5 generated: Je a été très jeune.
 
 ## Risk assessment and mitigations
 

@@ -300,9 +300,20 @@ def summarize():
     if completed:
         fig,axes=plt.subplots(1,2,figsize=(9,4))
         for ax,metric in zip(axes,['bleu','chrf']):
-            ax.bar([r['model'] for r in completed],[r[metric] for r in completed],color='#315b7a');ax.set_title(metric.upper());ax.set_ylim(0,100)
+            bars=ax.bar([r['model'] for r in completed],[r[metric] for r in completed],color='#315b7a');ax.set_title(metric.upper());ax.set_ylim(0,max(5,max(r[metric] for r in completed)*1.25));ax.bar_label(bars,fmt='%.2f');ax.set_ylabel('Score (0–100 scale)')
         fig.suptitle('Measured test scores only; absent models have not completed')
         fig.tight_layout();fig.savefig(out/'quality.png',dpi=150);plt.close(fig)
+    histories=[]
+    for name in ['basic','mt5']:
+        hp=ROOT/f'results/{name}_history.json'
+        if hp.exists():histories.append((name,read(hp)))
+    if histories:
+        fig,axes=plt.subplots(1,len(histories),figsize=(5*len(histories),3.5),squeeze=False)
+        for ax,(name,hist) in zip(axes[0],histories):
+            ax.plot([r['epoch'] for r in hist],[r['train_loss'] for r in hist],label='Train')
+            ax.plot([r['epoch'] for r in hist],[r['validation_loss'] for r in hist],label='Validation')
+            ax.set_title(name);ax.set_xlabel('Epoch');ax.set_ylabel('Token cross entropy');ax.legend()
+        fig.tight_layout();fig.savefig(out/'loss_curves.png',dpi=150);plt.close(fig)
     text=['# Experimental results','', 'Only completed runs have numerical results. Blank entries are not zero.','',
           '| Model | Status | BLEU | chrF | Parameters | Train seconds | Inference seconds |',
           '|---|---|---:|---:|---:|---:|---:|']
